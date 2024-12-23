@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Layering</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      #background1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 0;
+      }
+
+      
+      #background2 {
+        position: absolute;
+        top: 0; 
+        left: 0; 
+        width: 30%; 
+        height: 65%; 
+        border-radius: 0 25px 25px 0; 
+        background-color: #5c5d92; 
+        border: 2px  #393a62; 
+        z-index: 1; 
+      }
+      
+      #background3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        height: 85%;
+        border-radius: 30px;
+        background-color: #f3f3fb;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background1"></div>
+    <div id="background2"></div>
+    <div id="background3"></div>
+  </body>
+</html>
